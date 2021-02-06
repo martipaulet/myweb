@@ -73,7 +73,7 @@
 /*-----home section-----*/
 .home {
     display: flex;
-    background: url(https://static.vecteezy.com/system/resources/previews/001/902/006/non_2x/dark-colored-particles-fly-through-3d-illustration-background-wallpaper-design-artwork-free-photo.jpg)no-repeat center;
+    background: url(https://www.setaswall.com/wp-content/uploads/2017/06/Background-Dark-Spots-1920-X-1080.jpg)no-repeat center;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -100,7 +100,7 @@
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     text-align: center;
     z-index: 1;
 }
@@ -113,7 +113,7 @@
     width: 0;
     background-color: crimson;
     animation: text_reveal_box 1s ease;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 /*responsive media query*/
