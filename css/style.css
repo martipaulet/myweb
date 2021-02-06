@@ -73,8 +73,7 @@
 /*-----home section-----*/
 .home {
     display: flex;
-    background-color:black;
-    background-size: cover;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/902/006/non_2x/dark-colored-particles-fly-through-3d-illustration-background-wallpaper-design-artwork-free-photo.jpg)no-repeat center;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -126,7 +125,7 @@
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
     .max-width {
         padding: 0 50px;
     }
