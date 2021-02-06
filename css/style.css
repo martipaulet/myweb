@@ -21,6 +21,7 @@
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .navbar .max-width {
@@ -102,6 +103,7 @@
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
     text-align: center;
+    z-index: 1;
 }
 
 .home-text-content span {
