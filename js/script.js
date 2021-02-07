@@ -12,6 +12,7 @@ $(document).ready(function() {
     //menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
+        $('body').toggleClass("no-scroll")
         $('.home .home-text-content').toggleClass("none")
         $('.menu-btn i').toggleClass("active");
 
