@@ -73,8 +73,11 @@
 /*-----home section-----*/
 .home {
     display: flex;
-    background: url(https://www.setaswall.com/wp-content/uploads/2017/06/Background-Dark-Spots-1920-X-1080.jpg); 
+    background: url(https://images4.alphacoders.com/876/876094.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     color: white;
     min-height: 700px;
