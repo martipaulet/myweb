@@ -80,7 +80,7 @@
     background-size: cover;
     height: 100vh;
     color: white;
-    min-height: 700px;
+    min-height: 600px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -120,13 +120,6 @@
 }
 
 /*responsive media query*/
-@media (max-width:850px){
-
-}
-
-@media (max-width:850px){
-
-}
 
 @media (max-width: 800px) {
     .max-width {
@@ -172,11 +165,11 @@
     .home .none {
         display: none;
     }
-  /*
-    .home-text-content{
-        display: none!important;
+}
+@media (max-width:500px){
+    .home-text-content h1 {
+        font-size: 20px;
     }
-    */
 }
 /*end-responsive media query*/
 
