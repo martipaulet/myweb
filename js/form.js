@@ -1,3 +1,5 @@
+// -------CONSTANTES--------
+
 const form = document.getElementById('form');
 const username = document.getElementById('name');
 const email = document.getElementById('email');
@@ -7,11 +9,14 @@ const twitter = document.getElementById('twitter-btn');
 const insta = document.getElementById('insta-btn');
 const facebook = document.getElementById('facebook-btn');
 
+
+// ------LLAMADA VALIDACION FORMULARIO-----------
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validacion();
 });
 
+// -------SOCIAL LINKS------------
 twitter.addEventListener('click', (e) => {
     e.preventDefault();
     axios.get(`https://martipaulet-app.herokuapp.com/social-links`)
@@ -28,7 +33,6 @@ insta.addEventListener('click', (e) => {
         var linkinsta = data[0].instagram
         console.log(linkinsta)
     })
-
 }); 
 
 facebook.addEventListener('click', (e) => {
@@ -38,21 +42,15 @@ facebook.addEventListener('click', (e) => {
         var linkfacebook = data[0].facebook
         console.log(linkfacebook)
     })
-
-    
-
 }); 
 
 
-
-
-
+// --------VALIDACION FORMULARIO--------
 function validacion() {
     const namevalue = username.value.trim();
     const emailvalue = email.value.trim();
     const messagevalue = message.value;
     var cond = 1;
-
 
     if (namevalue === '') {
         setErrorFor(username, 'Enter a username');
@@ -60,6 +58,7 @@ function validacion() {
     }else {
         setSuccessFor(username); 
     }
+
 
     if (emailvalue === '') {
         setErrorFor(email, 'Enter an email');
@@ -80,18 +79,19 @@ function validacion() {
         setSuccessFor(message);
     }
 
+
     if (cond == 1) {
         axios.post('https://martipaulet-app.herokuapp.com/contact-data',{
             user: namevalue,
             email: emailvalue,
             message: messagevalue
         })
-        alert('your email has been sent');
+        alert('Your message has been sent');
 
     }
 }
 
-
+// ------MENSAJE DE ERROR FORMULARIO--------
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
@@ -99,11 +99,14 @@ function setErrorFor(input, message) {
     formControl.className = 'field error';
 }
 
+// -------MENSAJE FORMULARIO CORRECTO
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'field ok';
 }
 
+
+// ------COMPROVACION EMAIL FORMULARIO
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
