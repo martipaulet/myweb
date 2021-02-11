@@ -17,7 +17,6 @@ $(window).on("load", function () {
             $('body').toggleClass("no-scroll")
             $('.home .home-text-content').toggleClass("none")
             $('.menu-btn i').toggleClass("active");
-
         })
     })
 });
