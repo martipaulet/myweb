@@ -373,18 +373,18 @@ small{
 }
 
 .field.error input{
-    border-color:  crimson!important;
+    border: 2px solid  crimson!important;
 }
 
 .textarea.error textarea {
-    border-color:  crimson!important;
+    border: 2px solid  crimson!important;
 }
 
 .field.ok input{
-    border-color:  green!important;
+    border: 2px solid  green!important;
 }
 .textarea.ok textarea{
-    border-color:  green!important;
+    border: 2px solid  green!important;
 }
 
 .contact .right form .textarea{
