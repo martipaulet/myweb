@@ -23,6 +23,7 @@ twitter.addEventListener('click', (e) => {
         .then(({data}) => {
             var linktwitter = data[0].twitter
             console.log(linktwitter)
+            window.open(linktwitter, '_blank')
         })
 }); 
 
@@ -32,6 +33,7 @@ insta.addEventListener('click', (e) => {
     .then(({data}) => {
         var linkinsta = data[0].instagram
         console.log(linkinsta)
+        window.open(linkinsta, '_blank')
     })
 }); 
 
@@ -41,6 +43,7 @@ facebook.addEventListener('click', (e) => {
     .then(({data}) => {
         var linkfacebook = data[0].facebook
         console.log(linkfacebook)
+        window.open(linkfacebook, '_blank')
     })
 }); 
 
