@@ -99,13 +99,13 @@ function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
     small.innerText = message;
-    formControl.className = 'field error';
+    formControl.className = 'field textarea error';
 }
 
 // -------MENSAJE FORMULARIO CORRECTO
 function setSuccessFor(input) {
     const formControl = input.parentElement;
-    formControl.className = 'field ok';
+    formControl.className = 'field textarea ok';
 }
 
 
