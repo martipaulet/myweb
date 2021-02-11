@@ -375,14 +375,14 @@ small{
     border: 2px solid  crimson!important;
 }
 
-.textarea.error textarea {
+.field.error textarea {
     border: 2px solid  crimson!important;
 }
 
 .field.ok input{
     border: 2px solid  green!important;
 }
-.textarea.ok textarea{
+.field.ok textarea{
     border: 2px solid  green!important;
 }
 
